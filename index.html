@@ -17,7 +17,5 @@ Hello World!
   };
   firebase.initializeApp(config);
   var starCountRef = firebase.database().ref('posts');
-  starCountRef.on('value', function(snapshot) {
-    console.log(snapshot.val());
-  });
+  console.log(starCountRef);
 </script>
