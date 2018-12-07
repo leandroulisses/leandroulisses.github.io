@@ -16,6 +16,8 @@ Hello World!
     messagingSenderId: "813804275735"
   };
   firebase.initializeApp(config);
-  var starCountRef = firebase.database().ref('posts');
-  console.log(starCountRef);
+  var starCountRef = firebase.database().ref('databases/posts');
+  starCountRef.on('value', function(snapshot) {
+    console.log(snapshot.val());
+  });
 </script>
