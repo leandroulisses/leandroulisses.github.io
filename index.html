@@ -3,21 +3,6 @@
 Hello World!
   </body>
 </html>
-<script src="https://www.gstatic.com/firebasejs/5.5.2/firebase-app.js"></script>
-<script src="https://www.gstatic.com/firebasejs/5.5.2/firebase-database.js"></script>
 <script>
   // Initialize Firebase
-  var config = {
-    apiKey: "AIzaSyD1uvSCk-oRMyQM1V8BPQLclUOrZhCOIxc",
-    authDomain: "leandroulisses-cce14.firebaseapp.com",
-    databaseURL: "https://leandroulisses-cce14.firebaseio.com",
-    projectId: "leandroulisses-cce14",
-    storageBucket: "leandroulisses-cce14.appspot.com",
-    messagingSenderId: "813804275735"
-  };
-  firebase.initializeApp(config);
-  var starCountRef = firebase.database().ref('databases/posts');
-  starCountRef.on('value', function(snapshot) {
-    console.log(snapshot.val());
-  });
 </script>
